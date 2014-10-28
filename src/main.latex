@@ -15,7 +15,7 @@
   \usepackage[utf8]{inputenc}
 \fi
 
-\moderncvtheme[grey]{classic}
+\moderncvtheme{classic}
 
 \name{Thibault}{Jouan}
 \title{DevOP}
