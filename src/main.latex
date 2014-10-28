@@ -23,6 +23,9 @@
 \phone{+33.628253900}
 \email{thibault@jouan.me}
 
+\usepackage[firstyear=1997, lastyear=2015]{moderntimeline}
+\tlwidth{0.8ex}
+
 
 
 \begin{document}
@@ -32,7 +35,7 @@
 
 \section{Experience}
 
-\cventry{2014--present}{CTO}{DATACUBE}{}{}{
+\tlcventry{2014}{0}{CTO}{DATACUBE}{}{}{
   \begin{itemize}%
     \item Project management
     \item Ruby, Ruby on Rails, PostgreSQL, HTML/CSS development
@@ -40,11 +43,53 @@
   \end{itemize}
 }
 
-\cventry{2009--2014}{Freelance}{}{}{}{
+\tlcventry{2009}{2014}{Freelance}{}{}{}{
   \begin{itemize}%
     \item Project management
     \item Ruby, Ruby on Rails, PostgreSQL, HTML/CSS development
     \item System administration
+  \end{itemize}
+}
+
+\tlcventry{2007}{2009}{Project manager}{Cyber'L}{}{}{
+  \begin{itemize}%
+    \item item
+  \end{itemize}
+}
+
+\tlcventry{2005}{2007}{Developper, system administrator}{InterFaces}{}{}{
+  \begin{itemize}%
+    \item item
+  \end{itemize}
+}
+
+\tllabelcventry{2004}{2004.9}{2004}{Freelance}{}{}{}{
+  \begin{itemize}%
+    \item item
+  \end{itemize}
+}
+
+\tlcventry{2002}{2004}{Developper, system administrator}{PulpStation}{}{}{
+  \begin{itemize}%
+    \item item
+  \end{itemize}
+}
+
+\tllabelcventry{2001}{2001.5}{2001}{}{Vernon informatique}{}{}{
+  \begin{itemize}%
+    \item item
+  \end{itemize}
+}
+
+\tlcventry{1999}{2001}{}{La Dépêche}{}{}{
+  \begin{itemize}%
+    \item item
+  \end{itemize}
+}
+
+\tllabelcventry{1997}{1997.5}{1997}{}{La boutique informatique}{}{}{
+  \begin{itemize}%
+    \item item
   \end{itemize}
 }
 
