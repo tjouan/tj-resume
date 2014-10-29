@@ -21,11 +21,13 @@
 \providecommand*{\rubysymbol}{{\includegraphics[height=8pt]{images/ruby.png}}}
 
 \usepackage[bottom, norule, symbol*]{footmisc}
-\newcommand*{\devnotes}[1]{%
+\newcommand*{\devnotes}[2]{%
   \vfill
   \footnotetext[1]{#1}
+  \footnotetext[2]{#2}
 }
 \newcommand*{\contributor}{\footnotemark[1]}
+\newcommand*{\developer}{\footnotemark[2]}
 
 \name{Thibault}{Jouan}
 \title{Full-stack developer}
@@ -48,11 +50,14 @@
 
 
 \section{Skills}
+
+\subsection{Development}
 \cvcomputer
   {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript, PHP}
-  {www}{HTML/XHTML, CSS, SVG, Haml, Sass}
+  {www}{HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js}
 \cvcomputer
-  {Frameworks}{Ruby on Rails ≥ 3.x\contributor, Sinatra, D3.js, Symfony 1.x}
+  {Frameworks}{Ruby on Rails ≥ 3.x\contributor, Sinatra, Backbone.js, Spine.js,
+    Ember.js, D3.js, Symfony 1.x}
   {Databases}{PostgreSQL, MySQL, Redis}
 \cvcomputer
   {BDD}{Cucumber, Aruba, Capybara, Selenium, PHPUnit}
@@ -60,15 +65,21 @@
 \cvcomputer
   {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
   {GUI}{Xlib, GTK, QT, SDL, OpenGL}
+
+\subsection{Tools}
 \cvcomputer
   {Text}{Vim, sed, grep…}
-  {Revision control}{CVS, git, mercurial}
+  {Revision control}{git, CVS, mercurial}
+\cvcomputer
+  {DevOps}{producer\developer, chef}
+  {www}{Grunt, zassets\developer}
+
 \subsection{Learning}
 \cvcomputer
-  {Languages}{Elixir, Erlang, Haskell}
-  {Text}{\LaTeX}
+  {Languages}{Elixir, Erlang, Haskell, R}
+  {Text}{\TeX, \LaTeX, \XeTeX}
 
-\devnotes{Contributor}
+\devnotes{Contributor}{Developer}
 
 
 \section{Experience}
