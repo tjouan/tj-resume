@@ -33,10 +33,20 @@
 \makecvtitle
 
 
-\section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\section{Skills}
+\subsection{Development}
+\cvcomputer
+  {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript}
+  {www}{HTML/XHTML, CSS, Haml, Sass}
+\cvcomputer
+  {Frameworks}{Ruby on Rails ≥ 3.x, Sinatra, D3.js, Symfony 1.x}
+  {Databases}{PostgreSQL, MySQL, Redis}
+\cvcomputer
+  {BDD}{Cucumber, Aruba, Capybara, Selenium, PHPUnit}
+  {TDD}{RSpec, Test::Unit, MiniTest}
+\cvcomputer
+  {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
+  {GUI}{Xlib, GTK, QT, SDL, OpenGL}
 
 
 \section{Experience}
