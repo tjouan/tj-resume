@@ -28,8 +28,13 @@
   \footnotetext[1]{#1}
   \footnotetext[2]{#2}
 }
-\newcommand*{\contributor}{\footnotemark[1]}
-\newcommand*{\developer}{\footnotemark[2]}
+\newcommand*{\contributor}{\textsuperscript{\footnotemark[1]}}
+\newcommand*{\developer}{\textsuperscript{\footnotemark[2]}}
+\makeatletter
+\def\@makefnmark{%
+  \leavevmode
+  \raise.9ex\hbox{\fontsize\sf@size\z@\normalfont\tiny\@thefnmark}}
+\makeatother
 
 \name{Thibault}{Jouan}
 \title{Full-stack developer}
