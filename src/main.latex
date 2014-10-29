@@ -82,12 +82,13 @@
   {DevOps}{producer\developer, chef}
   {www}{Grunt, zassets\developer}
 
-\subsection{Learning}
+\devnotes{Contributor}{Developer}
+
+
+\section{Learning}
 \cvcomputer
   {Languages}{Elixir, Erlang, Haskell, R}
   {Text}{\TeX, \LaTeX, \XeTeX}
-
-\devnotes{Contributor}{Developer}
 
 
 \section{Experience}
