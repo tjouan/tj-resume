@@ -18,6 +18,7 @@
 \moderncvtheme{classic}
 
 \providecommand*{\jabbersymbol}{{\includegraphics[height=8pt]{images/jabber.png}}}
+\providecommand*{\rubysymbol}{{\includegraphics[height=8pt]{images/ruby.png}}}
 
 \usepackage[bottom, norule, symbol*]{footmisc}
 \newcommand*{\devnotes}[1]{%
@@ -32,7 +33,9 @@
 \phone{+33.628253900}
 \email{thibault@jouan.me}
 \extrainfo{%
-  {\jabbersymbol~tj@im.a13.fr}
+  \jabbersymbol~tj@im.a13.fr \\
+  \rubysymbol~https://rubygems.org/profiles/tjouan \\
+  \githubsocialsymbol~https://github.com/tjouan
 }
 
 \usepackage[firstyear=1997, lastyear=2015]{moderntimeline}
