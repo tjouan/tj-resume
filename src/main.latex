@@ -18,7 +18,7 @@
 \moderncvtheme{classic}
 
 \name{Thibault}{Jouan}
-\title{DevOP}
+\title{Full-stack developer}
 \address{4 rue du mesnil}{Caen, France}
 \phone{+33.628253900}
 \email{thibault@jouan.me}
@@ -33,75 +33,80 @@
 \makecvtitle
 
 
+\section{Computer skills}
+\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+
 \section{Experience}
 
-\tlcventry{2014}{0}{CTO}{DATACUBE}{}{}{
+\tlcventry{2014}{0}{Chief technology officer}{DATACUBE}{}{}{
   \begin{itemize}%
     \item Project management
-    \item Ruby, Ruby on Rails, PostgreSQL, HTML/CSS development
-    \item System administration
+    \item Software development (Ruby, Ruby on Rails, PostgreSQL, HTML/CSS,
+      ECMAScript, CoffeeScript)
+    \item System administration (FreeBSD, Debian)
   \end{itemize}
 }
 
 \tlcventry{2009}{2014}{Freelance}{}{}{}{
   \begin{itemize}%
     \item Project management
-    \item Ruby, Ruby on Rails, PostgreSQL, HTML/CSS development
-    \item System administration
+    \item Software development (C, Ruby, Ruby on Rails, PostgreSQL, HTML/CSS,
+      ECMAScript, CoffeeScript, PHP/MySQL)
+    \item System administration (FreeBSD, Debian)
+    \item Consulting, training
   \end{itemize}
 }
 
 \tlcventry{2007}{2009}{Project manager}{Cyber'L}{}{}{
   \begin{itemize}%
-    \item item
+    \item Project management
+    \item Software development (Ruby, HTML/CSS, ECMAScript, PHP/MySQL)
+    \item System administration (FreeBSD, Debian)
   \end{itemize}
 }
 
 \tlcventry{2005}{2007}{Developper, system administrator}{InterFaces}{}{}{
   \begin{itemize}%
-    \item item
+    \item Software development (Perl, HTML/CSS, ECMAScript, PHP/MySQL)
+    \item System administration (Debian, Fedora)
+    \item Network administration
   \end{itemize}
 }
 
 \tllabelcventry{2004}{2004.9}{2004}{Freelance}{}{}{}{
   \begin{itemize}%
-    \item item
+    \item Software development (PAAS solution with Ruby, Debian, FreeBSD)
   \end{itemize}
 }
 
 \tlcventry{2002}{2004}{Developper, system administrator}{PulpStation}{}{}{
   \begin{itemize}%
-    \item item
+    \item Software development (Perl, HTML/CSS, ECMAScript, PHP/MySQL)
+    \item System administration (Debian)
   \end{itemize}
 }
 
-\tllabelcventry{2001}{2001.5}{2001}{}{Vernon informatique}{}{}{
+\tlcventry{1999}{2001}{Newspaper delivery}{La Dépêche}{}{}{
   \begin{itemize}%
-    \item item
+    \item Deliveries
+    \item Delivery planing and verifications
   \end{itemize}
 }
 
-\tlcventry{1999}{2001}{}{La Dépêche}{}{}{
+\tllabelcventry{1997}{1997.5}{1997}{Internship}{La boutique informatique}{}{}{
   \begin{itemize}%
-    \item item
-  \end{itemize}
-}
-
-\tllabelcventry{1997}{1997.5}{1997}{}{La boutique informatique}{}{}{
-  \begin{itemize}%
-    \item item
+    \item Computer assembly (desktops and servers)
+    \item Hardware and software maintenance
   \end{itemize}
 }
 
 
 \section{Languages}
-\cvitemwithcomment{Language 1}{Skill level}{Comment}
-
-
-\section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvitemwithcomment{French}{Native}{}
+\cvitemwithcomment{English}{Intermediate}{Read and understand perfectly, but lack speaking practice}
 
 
 \end{document}
