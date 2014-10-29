@@ -44,7 +44,8 @@
 \extrainfo{%
   \jabbersymbol~tj@im.a13.fr \\
   \rubysymbol~https://rubygems.org/profiles/tjouan \\
-  \githubsocialsymbol~https://github.com/tjouan
+  \githubsocialsymbol~https://github.com/tjouan \\
+  Driving license
 }
 
 \usepackage[firstyear=1997, lastyear=2015]{moderntimeline}
