@@ -19,6 +19,13 @@
 
 \providecommand*{\jabbersymbol}{{\includegraphics[height=8pt]{images/jabber.png}}}
 
+\usepackage[bottom, norule, symbol*]{footmisc}
+\newcommand*{\devnotes}[1]{%
+  \vfill
+  \footnotetext[1]{#1}
+}
+\newcommand*{\contributor}{\footnotemark[1]}
+
 \name{Thibault}{Jouan}
 \title{Full-stack developer}
 \address{4 rue du mesnil}{Caen, France}
@@ -42,7 +49,7 @@
   {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript, PHP}
   {www}{HTML/XHTML, CSS, SVG, Haml, Sass}
 \cvcomputer
-  {Frameworks}{Ruby on Rails ≥ 3.x, Sinatra, D3.js, Symfony 1.x}
+  {Frameworks}{Ruby on Rails ≥ 3.x\contributor, Sinatra, D3.js, Symfony 1.x}
   {Databases}{PostgreSQL, MySQL, Redis}
 \cvcomputer
   {BDD}{Cucumber, Aruba, Capybara, Selenium, PHPUnit}
@@ -57,6 +64,8 @@
 \cvcomputer
   {Languages}{Elixir, Erlang, Haskell}
   {Text}{\LaTeX}
+
+\devnotes{Contributor}
 
 
 \section{Experience}
