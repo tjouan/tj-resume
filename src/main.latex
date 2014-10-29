@@ -3,7 +3,7 @@
 \usepackage{xltxtra}
 \usepackage[english]{babel}
 
-\usepackage[scale=0.7, top=1.5cm, right=1cm, bottom=2cm, left=1cm]{geometry}
+\usepackage[scale=0.7, top=2cm, right=1.5cm, bottom=2cm, left=1.5cm]{geometry}
 
 \usepackage{ifxetex}
 \ifxetex
