@@ -17,15 +17,19 @@
 
 \moderncvtheme{classic}
 
+\providecommand*{\jabbersymbol}{{\includegraphics[height=8pt]{images/jabber.png}}}
+
 \name{Thibault}{Jouan}
 \title{Full-stack developer}
 \address{4 rue du mesnil}{Caen, France}
 \phone{+33.628253900}
 \email{thibault@jouan.me}
+\extrainfo{%
+  {\jabbersymbol~tj@im.a13.fr}
+}
 
 \usepackage[firstyear=1997, lastyear=2015]{moderntimeline}
 \tlwidth{0.8ex}
-
 
 
 \begin{document}
