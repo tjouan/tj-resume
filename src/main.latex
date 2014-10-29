@@ -35,7 +35,7 @@
 
 \section{Skills}
 \cvcomputer
-  {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript}
+  {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript, PHP}
   {www}{HTML/XHTML, CSS, SVG, Haml, Sass}
 \cvcomputer
   {Frameworks}{Ruby on Rails ≥ 3.x, Sinatra, D3.js, Symfony 1.x}
