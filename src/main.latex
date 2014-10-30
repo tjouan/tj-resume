@@ -91,7 +91,10 @@
   {Text}{\TeX, \LaTeX, \XeTeX}
 
 
-\section{Experience}
+\pagebreak
+
+
+\section{Work experience}
 
 \tlcventry{2014}{0}{Chief technology officer}{DATACUBE}{}{}{
   \begin{itemize}%
@@ -154,6 +157,13 @@
     \item Hardware and software maintenance
   \end{itemize}
 }
+
+
+\section{Volunteer experience}
+
+\tlcventry{2011}{0}{Barman}{Festival Beauregard}{}{}{}
+\tllabelcventry{2011}{2011.5}{2011}{Runner}{Nördik Impakt}{}{}{}
+\tllabelcventry{2010}{2010.5}{2010}{Barman}{Nördik Impakt}{}{}{}
 
 
 \section{Languages}
