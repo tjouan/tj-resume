@@ -82,13 +82,12 @@
   {DevOps}{producer\developer, chef}
   {www}{Grunt, zassets\developer}
 
-\devnotes{Contributor}{Developer}
-
-
 \section{Learning}
 \cvcomputer
   {Languages}{Elixir, Erlang, Haskell, R}
   {Text}{\TeX, \LaTeX, \XeTeX}
+
+\devnotes{Contributor}{Developer}
 
 
 \pagebreak
