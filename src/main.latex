@@ -84,6 +84,7 @@
 
 
 \section{Personal projects}
+
 \cvitem{producer}{
   https://github.com/tjouan/producer-core \newline
   Software provisioning and configuration management tool, including a DSL to
@@ -112,6 +113,7 @@
 
 
 \section{Learning}
+
 \cvcomputer
   {Languages}{Elixir, Erlang, Haskell, R}
   {Text}{\TeX, \LaTeX, \XeTeX}
@@ -125,7 +127,9 @@
 
 \section{Work experience}
 
-\tlcventry{2014}{0}{Chief technology officer}{DATACUBE}{Caen}{}{
+\tlcventry
+  {2014}{0}
+  {Chief technology officer}{DATACUBE}{Caen}{}{
   \begin{itemize}%
     \item Project management
     \item Software development (Ruby, Ruby on Rails, R, PostgreSQL, HTML/CSS,
@@ -134,7 +138,9 @@
   \end{itemize}
 }
 
-\tlcventry{2009}{2014}{Freelance}{}{Caen}{}{
+\tlcventry
+  {2009}{2014}
+  {Freelance}{}{Caen}{}{
   \begin{itemize}%
     \item Project management
     \item Software development (C, Ruby, Ruby on Rails, PostgreSQL, HTML/CSS,
@@ -144,7 +150,9 @@
   \end{itemize}
 }
 
-\tlcventry{2007}{2009}{Project manager}{Cyber'L}{Grigny}{}{
+\tlcventry
+  {2007}{2009}
+  {Project manager}{Cyber'L}{Grigny}{}{
   \begin{itemize}%
     \item Project management
     \item Software development (Ruby, HTML/CSS, ECMAScript, PHP/MySQL)
@@ -152,7 +160,9 @@
   \end{itemize}
 }
 
-\tlcventry{2005}{2007}{Developer, system administrator}{InterFaces}{Paris}{}{
+\tlcventry
+  {2005}{2007}
+  {Developer, system administrator}{InterFaces}{Paris}{}{
   \begin{itemize}%
     \item Software development (Perl, HTML/CSS, ECMAScript, PHP/MySQL)
     \item System administration (Debian, Fedora)
@@ -160,27 +170,32 @@
   \end{itemize}
 }
 
-\tllabelcventry{2004}{2004.9}{2004}{Freelance}{}{Rouen}{}{
+\tllabelcventry
+  {2004}{2004.9}{2004}
+  {Freelance}{}{Rouen}{}{
   \begin{itemize}%
     \item Software development (PAAS solution with Ruby, Debian, FreeBSD)
   \end{itemize}
 }
 
-\tlcventry{2002}{2004}{Developer, system administrator}{PulpStation}{Paris}{}{
+\tlcventry{2002}{2004}
+  {Developer, system administrator}{PulpStation}{Paris}{}{
   \begin{itemize}%
     \item Software development (Perl, HTML/CSS, ECMAScript, PHP/MySQL)
     \item System administration (Debian)
   \end{itemize}
 }
 
-\tlcventry{1999}{2001}{Newspaper delivery}{La Dépêche}{Évreux}{}{
+\tlcventry{1999}{2001}
+  {Newspaper delivery}{La Dépêche}{Évreux}{}{
   \begin{itemize}%
     \item Deliveries
     \item Delivery planing and verifications
   \end{itemize}
 }
 
-\tllabelcventry{1997}{1997.5}{1997}{Internship}{La boutique informatique}{Évreux}{}{
+\tllabelcventry{1997}{1997.5}{1997}
+  {Internship}{La boutique informatique}{Évreux}{}{
   \begin{itemize}%
     \item Computer assembly (desktops and servers)
     \item Hardware and software maintenance
@@ -196,6 +211,7 @@
 
 
 \section{Languages}
+
 \cvitemwithcomment{French}{Native}{}
 \cvitemwithcomment{English}{Intermediate}{Read and understand perfectly, but lack speaking practice}
 
