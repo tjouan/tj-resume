@@ -3,7 +3,7 @@
 \usepackage{xltxtra}
 \usepackage[english]{babel}
 
-\usepackage[scale=0.7, right=1.5cm, left=1.5cm]{geometry}
+\usepackage[scale=0.7, top=1.5cm, right=1.5cm, bottom=1.5cm, left=1.5cm]{geometry}
 
 \usepackage{ifxetex}
 \ifxetex
@@ -82,10 +82,40 @@
   {DevOps}{producer\developer, chef}
   {www}{Grunt, zassets\developer}
 
+
+\section{Personal projects}
+\cvitem{producer}{
+  https://github.com/tjouan/producer-core \newline
+  Software provisioning and configuration management tool, including a DSL to
+  write recipes. Ruby net-ssh and net-sftp are used for the execution of remote
+  shell commands and manipulation on remote file systems. \newline
+  producer started as a collection of heterogeneous scripts (Ruby, POSIX shell)
+  in the late '90s. I wanted to experiment with the design and usage of Domain
+  Specific Languages in Ruby, and refactor all my "recipes" in a common
+  language : producer satisfied this goal and I now use it almost on a daily
+  basis.
+}
+\cvitem{zassets}{
+  https://github.com/tjouan/zassets \newline
+  z'assets is a standalone "asset pipeline", based on sprockets (used by Ruby
+  on Rails). It can help development with its embedded HTTP server and the
+  build phase with all the benefits brought by sprockets. It is designed as the
+  single tool required for building static websites and single page
+  applications. \newline
+  It supports a few common asset kinds, more specific ones are supported by
+  plugins.
+}
+\cvitem{holo}{
+  https://github.com/tjouan/holo \newline
+  My own X11 window manager, written in C and Ruby (work in progress).
+}
+
+
 \section{Learning}
 \cvcomputer
   {Languages}{Elixir, Erlang, Haskell, R}
   {Text}{\TeX, \LaTeX, \XeTeX}
+
 
 \devnotes{Contributor}{Developer}
 
