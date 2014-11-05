@@ -65,7 +65,7 @@
   {www}{HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js}
 \cvcomputer
   {Frameworks}{Ruby on Rails ≥ 3.x\contributor, Sinatra, Backbone.js, Spine.js,
-    Ember.js, D3.js, Symfony 1.x}
+    D3.js, Symfony 1.x}
   {Databases}{PostgreSQL, MySQL, Redis}
 \cvcomputer
   {BDD}{Cucumber, Aruba, Capybara, Selenium}
@@ -116,7 +116,10 @@
 
 \cvcomputer
   {Languages}{Elixir, Erlang, Haskell, R}
+  {Frameworks}{Ember.js}
+\cvcomputer
   {Text}{\TeX, \LaTeX, \XeTeX}
+  {}{}
 
 
 \devnotes{Contributor}{Developer}
