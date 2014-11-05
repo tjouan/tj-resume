@@ -92,12 +92,12 @@
   shell commands and manipulation on remote file systems. \newline
   producer started as a collection of heterogeneous scripts (Ruby, POSIX shell)
   in the late '90s. I wanted to experiment with the design and usage of Domain
-  Specific Languages in Ruby, and refactor all my "recipes" in a common
+  Specific Languages in Ruby, and refactor all my ``recipes'' in a common
   language.
 }
 \cvitem{zassets}{
   https://github.com/tjouan/zassets \newline
-  z'assets is a standalone "asset pipeline", based on sprockets (used by Ruby
+  z'assets is a standalone ``asset pipeline'', based on sprockets (used by Ruby
   on Rails). It supports a few common asset kinds, more specific ones are
   supported by plugins.
 }
