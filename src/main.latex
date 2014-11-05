@@ -205,15 +205,22 @@
 
 \section{Volunteer experience}
 
-\tllabelcventry{2011}{0}{2011}{Barman}{Festival Beauregard (music festival)}{Beauregard}{}{}
-\tllabelcventry{2011}{2011.5}{2011}{Runner}{Nördik Impakt (music festival)}{Caen}{}{}
-\tllabelcventry{2010}{2010.5}{2010}{Barman}{Nördik Impakt (music festival)}{Caen}{}{}
+\tllabelcventry
+  {2011}{0}{2011}
+  {Barman}{Festival Beauregard (music festival)}{Beauregard}{}{}
+\tllabelcventry
+  {2011}{2011.5}{2011}
+  {Runner}{Nördik Impakt (music festival)}{Caen}{}{}
+\tllabelcventry
+  {2010}{2010.5}{2010}
+  {Barman}{Nördik Impakt (music festival)}{Caen}{}{}
 
 
 \section{Languages}
 
 \cvitemwithcomment{French}{Native}{}
-\cvitemwithcomment{English}{Intermediate}{Read and understand perfectly, but lack speaking practice}
+\cvitemwithcomment{English}{Intermediate}
+  {Read and understand perfectly, but lack speaking practice}
 
 
 \end{document}
