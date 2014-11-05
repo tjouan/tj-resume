@@ -93,18 +93,13 @@
   producer started as a collection of heterogeneous scripts (Ruby, POSIX shell)
   in the late '90s. I wanted to experiment with the design and usage of Domain
   Specific Languages in Ruby, and refactor all my "recipes" in a common
-  language: producer satisfied this goal and I now use it almost on a daily
-  basis.
+  language.
 }
 \cvitem{zassets}{
   https://github.com/tjouan/zassets \newline
   z'assets is a standalone "asset pipeline", based on sprockets (used by Ruby
-  on Rails). It can help development with its embedded HTTP server and the
-  build phase with all the benefits brought by sprockets. It is designed as the
-  single tool required for building static websites and single page
-  applications. \newline
-  It supports a few common asset kinds, more specific ones are supported by
-  plugins.
+  on Rails). It supports a few common asset kinds, more specific ones are
+  supported by plugins.
 }
 \cvitem{holo}{
   https://github.com/tjouan/holo \newline
