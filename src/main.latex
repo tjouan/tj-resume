@@ -92,7 +92,7 @@
   producer started as a collection of heterogeneous scripts (Ruby, POSIX shell)
   in the late '90s. I wanted to experiment with the design and usage of Domain
   Specific Languages in Ruby, and refactor all my "recipes" in a common
-  language : producer satisfied this goal and I now use it almost on a daily
+  language: producer satisfied this goal and I now use it almost on a daily
   basis.
 }
 \cvitem{zassets}{
