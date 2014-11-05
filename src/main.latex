@@ -68,8 +68,8 @@
     Ember.js, D3.js, Symfony 1.x}
   {Databases}{PostgreSQL, MySQL, Redis}
 \cvcomputer
-  {BDD}{Cucumber, Aruba, Capybara, Selenium, PHPUnit}
-  {TDD}{RSpec, Test::Unit, MiniTest}
+  {BDD}{Cucumber, Aruba, Capybara, Selenium}
+  {TDD}{RSpec, Ruby Test::Unit, MiniTest, PHPUnit}
 \cvcomputer
   {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
   {GUI}{Xlib, GTK, QT, SDL, OpenGL}
