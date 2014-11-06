@@ -76,11 +76,12 @@
 
 \subsection{Tools}
 \cvcomputer
-  {Text}{Vim, sed, grep…}
+  {Text}{Vim, sed, grep, AWK…}
   {Revision control}{git, CVS, mercurial}
 \cvcomputer
   {DevOps}{producer\developer, chef}
-  {www}{Grunt, zassets\developer}
+  {www}{Nginx, lighttpd, Varnish, HAProxy, Apache HTTP Server, Grunt,
+    zassets\developer}
 
 
 \section{Personal projects}
