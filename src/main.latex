@@ -38,7 +38,7 @@
 
 \name{Thibault}{Jouan}
 \title{Full-stack software engineer}
-\address{4 rue du mesnil}{Caen, France}
+\address{4 rue du mesnil, Caen, France}{}
 \phone{+33.628253900 (UTC +1)}
 \email{thibault@jouan.me}
 \extrainfo{%
@@ -62,7 +62,8 @@
 \subsection{Development}
 \cvcomputer
   {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript, PHP}
-  {www}{HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js}
+  {www}
+  {HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js, jQuery}
 \cvcomputer
   {Frameworks}{Ruby on Rails ≥ 3.x\contributor, Sinatra, Backbone.js, Spine.js,
     D3.js, Symfony 1.x}
@@ -71,8 +72,8 @@
   {BDD}{Cucumber, Aruba, Capybara, Selenium}
   {TDD}{RSpec, Ruby Test::Unit, MiniTest, PHPUnit}
 \cvcomputer
-  {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
   {GUI}{Xlib, GTK, QT, SDL, OpenGL}
+  {}{}
 
 \subsection{Tools}
 \cvcomputer
@@ -80,8 +81,24 @@
   {Revision control}{git, CVS, mercurial}
 \cvcomputer
   {DevOps}{producer\developer, chef}
-  {www}{Nginx, lighttpd, Varnish, HAProxy, Apache HTTP Server, Grunt,
-    zassets\developer}
+  {www}{Grunt, zassets\developer}
+
+\subsection{Admin}
+\cvcomputer
+  {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
+  {www}{Nginx, lighttpd, Varnish, HAProxy, Apache HTTP Server}
+\cvcomputer
+  {DNS}{BIND, MaraDNS, Unbound}
+  {mail}{Exim, Dovecot, Sympa, Courier, procmail, getmail, fetchmail…}
+\cvcomputer
+  {Directory}{OpenLDAP, NIS}
+  {XMPP}{Jabberd, ejabberd}
+\cvcomputer
+  {Supervision}{Nagios, MRTG, RRDtool, Munin…}
+  {Security}{pf, ipf, ipfw, ip6?tables, Openswan, OpenVPN, isakmpd, racoon}
+\cvcomputer
+  {Storage}{ZFS, NFS, Samba}
+  {Misc}{INN, various irc daemons}
 
 
 \section{Personal projects}
@@ -111,11 +128,8 @@
 \section{Learning}
 
 \cvcomputer
-  {Languages}{Elixir, Erlang, Haskell, R}
+  {Languages}{Elixir, Erlang, Haskell, R, \LaTeX}
   {Frameworks}{Ember.js}
-\cvcomputer
-  {Text}{\TeX, \LaTeX, \XeTeX}
-  {}{}
 
 
 \devnotes{Contributor}{Developer}
