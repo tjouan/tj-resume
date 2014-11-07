@@ -106,12 +106,8 @@
 \cvitem{producer}{
   https://github.com/tjouan/producer-core \newline
   Software provisioning and configuration management tool, including a DSL to
-  write recipes. Ruby net-ssh and net-sftp are used for the execution of remote
-  shell commands and manipulation on remote file systems. \newline
-  producer started as a collection of heterogeneous scripts (Ruby, POSIX shell)
-  in the late '90s. I wanted to experiment with the design and usage of Domain
-  Specific Languages in Ruby, and refactor all my ``recipes'' in a common
-  language.
+  write ``recipes''. Ruby net-ssh and net-sftp are used for the execution of
+  remote shell commands and manipulation on remote file systems.
 }
 \cvitem{zassets}{
   https://github.com/tjouan/zassets \newline
