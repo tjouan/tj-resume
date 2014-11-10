@@ -79,9 +79,6 @@
 \cvcomputer
   {Text}{Vim, sed, grep, AWK…}
   {Revision control}{git, CVS, mercurial}
-\cvcomputer
-  {DevOps}{producer\developer, chef}
-  {www}{Grunt, zassets\developer}
 
 \subsection{Admin}
 \cvcomputer
@@ -126,6 +123,9 @@
 \cvcomputer
   {Languages}{Elixir, Erlang, Haskell, R, \LaTeX}
   {Frameworks}{Ember.js}
+\cvcomputer
+  {DevOps}{Chef, Puppet, Ansible, Capistrano…}
+  {}{}
 
 
 \devnotes{Contributor}{Developer}
