@@ -78,7 +78,7 @@
   {Text}{Vim, sed, grep, AWK…}
   {Revision control}{git, CVS, mercurial}
 
-\subsection{Admin}
+\subsection{SysAdmin}
 \cvcomputer
   {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
   {www}{Nginx, lighttpd, Varnish, HAProxy, Apache HTTP Server}
