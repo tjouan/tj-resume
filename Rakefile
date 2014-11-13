@@ -1,7 +1,7 @@
 require 'pathname'
 
 BUILD_DIR   = Pathname('build').freeze
-OUTPUT_DIR  = Pathname('output').freeze
+DIST_DIR    = Pathname('dist').freeze
 SRC_DIR     = Pathname('src').freeze
 SRCS        = Pathname.glob("#{SRC_DIR}/resume_*.latex").freeze
 MAIN        = (SRC_DIR + 'main.latex').freeze
@@ -24,12 +24,12 @@ PDF_FILES.each { |e| file e => MAIN }
 task default: :build
 task all: %i[build install]
 
-desc 'Build PDF output from LaTeX sources'
+desc 'Build PDF documents from LaTeX sources'
 task build: PDF_FILES
 
-desc 'Install built files in `output\' directory'
+desc "Install built PDF in `#{DIST_DIR}' directory"
 task install: :build do
-  cp Pathname.glob("#{BUILD_DIR}/*.pdf"), OUTPUT_DIR
+  cp Pathname.glob("#{BUILD_DIR}/*.pdf"), DIST_DIR
 end
 
 desc 'Clean temporary build files'
