@@ -36,8 +36,11 @@
   \raise.9ex\hbox{\fontsize\sf@size\z@\normalfont\tiny\@thefnmark}}
 \makeatother
 
+\ifx\jobtitle\undefined
+  \def\jobtitle{}
+\fi
 \name{Thibault}{Jouan}
-\title{Full-stack software engineer}
+\title{\jobtitle}
 \address{4 rue du mesnil, Caen, France}{}
 \phone{+33.628253900 (UTC +1)}
 \email{thibault@jouan.me}
@@ -57,79 +60,84 @@
 \makecvtitle
 
 
-\section{Skills}
+\ifdefined\isshort
+\else
+  \section{Skills}
 
-\subsection{Development}
-\cvcomputer
-  {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript, PHP}
-  {www}
-  {HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js, jQuery}
-\cvcomputer
-  {Frameworks}{Ruby on Rails ≥ 3.x\contributor, Sinatra, Backbone.js, Spine.js,
-    D3.js, Symfony 1.x}
-  {Databases}{PostgreSQL, MySQL, Redis}
-\cvcomputer
-  {BDD, TDD}
-  {Cucumber, Aruba, Capybara, Selenium, RSpec, Test::Unit, MiniTest, PHPUnit}
-  {GUI}{Xlib, GTK, QT, SDL, OpenGL}
+  \subsection{Development}
+  \cvcomputer
+    {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript, PHP}
+    {www}
+    {HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js,
+      jQuery}
+  \cvcomputer
+    {Frameworks}
+    {Ruby on Rails ≥ 3.x\contributor, Sinatra, Backbone.js, Spine.js, D3.js,
+      Symfony 1.x}
+    {Databases}{PostgreSQL, MySQL, Redis}
+  \cvcomputer
+    {BDD, TDD}
+    {Cucumber, Aruba, Capybara, Selenium, RSpec, Test::Unit, MiniTest, PHPUnit}
+    {GUI}{Xlib, GTK, QT, SDL, OpenGL}
 
-\subsection{Tools}
-\cvcomputer
-  {Text}{Vim, sed, grep, AWK…}
-  {Revision control}{git, CVS, mercurial}
+  \subsection{Tools}
+  \cvcomputer
+    {Text}{Vim, sed, grep, AWK…}
+    {Revision control}{git, CVS, mercurial}
 
-\subsection{SysAdmin}
-\cvcomputer
-  {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
-  {www}{Nginx, lighttpd, Varnish, HAProxy, Apache HTTP Server}
-\cvcomputer
-  {DNS}{BIND, MaraDNS, Unbound}
-  {mail}{Exim, Dovecot, Sympa, Courier, procmail, getmail, fetchmail…}
-\cvcomputer
-  {Directory}{OpenLDAP, NIS}
-  {XMPP}{Jabberd, ejabberd}
-\cvcomputer
-  {Supervision}{Nagios, MRTG, RRDtool, Munin…}
-  {Security}{pf, ipf, ipfw, ip6?tables, Openswan, OpenVPN, isakmpd, racoon}
-\cvcomputer
-  {Storage}{ZFS, NFS, Samba}
-  {Misc}{INN, various irc daemons}
-
-
-\section{Personal projects}
-
-\cvitem{producer}{
-  https://github.com/tjouan/producer-core \newline
-  Software provisioning and configuration management tool, including a DSL to
-  write ``recipes''. Ruby net-ssh and net-sftp are used for the execution of
-  remote shell commands and manipulation on remote file systems.
-}
-\cvitem{zassets}{
-  https://github.com/tjouan/zassets \newline
-  z'assets is a standalone ``asset pipeline'', based on sprockets (used by Ruby
-  on Rails). It supports a few common asset kinds, more specific ones are
-  supported by plugins.
-}
-\cvitem{holo}{
-  https://github.com/tjouan/holo \newline
-  My own X11 window manager, written in C and Ruby (work in progress).
-}
+  \subsection{SysAdmin}
+  \cvcomputer
+    {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
+    {www}{Nginx, lighttpd, Varnish, HAProxy, Apache HTTP Server}
+  \cvcomputer
+    {DNS}{BIND, MaraDNS, Unbound}
+    {mail}{Exim, Dovecot, Sympa, Courier, procmail, getmail, fetchmail…}
+  \cvcomputer
+    {Directory}{OpenLDAP, NIS}
+    {XMPP}{Jabberd, ejabberd}
+  \cvcomputer
+    {Supervision}{Nagios, MRTG, RRDtool, Munin…}
+    {Security}{pf, ipf, ipfw, ip6?tables, Openswan, OpenVPN, isakmpd, racoon}
+  \cvcomputer
+    {Storage}{ZFS, NFS, Samba}
+    {Misc}{INN, various irc daemons}
 
 
-\section{Learning}
+  \section{Personal projects}
 
-\cvcomputer
-  {Languages}{Elixir, Erlang, Haskell, R, \LaTeX}
-  {Frameworks}{Ember.js}
-\cvcomputer
-  {DevOps}{Chef, Puppet, Ansible, Capistrano…}
-  {}{}
+  \cvitem{producer}{
+    https://github.com/tjouan/producer-core \newline
+    Software provisioning and configuration management tool, including a DSL to
+    write ``recipes''. Ruby net-ssh and net-sftp are used for the execution of
+    remote shell commands and manipulation on remote file systems.
+  }
+  \cvitem{zassets}{
+    https://github.com/tjouan/zassets \newline
+    z'assets is a standalone ``asset pipeline'', based on sprockets (used by Ruby
+    on Rails). It supports a few common asset kinds, more specific ones are
+    supported by plugins.
+  }
+  \cvitem{holo}{
+    https://github.com/tjouan/holo \newline
+    My own X11 window manager, written in C and Ruby (work in progress).
+  }
 
 
-\devnotes{Contributor}{Developer}
+  \section{Learning}
+
+  \cvcomputer
+    {Languages}{Elixir, Erlang, Haskell, R, \LaTeX}
+    {Frameworks}{Ember.js}
+  \cvcomputer
+    {DevOps}{Chef, Puppet, Ansible, Capistrano…}
+    {}{}
 
 
-\pagebreak
+  \devnotes{Contributor}{Developer}
+
+
+  \pagebreak
+\fi
 
 
 \section{Work experience}

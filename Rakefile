@@ -3,8 +3,9 @@ require 'pathname'
 BUILD_DIR   = Pathname('build').freeze
 OUTPUT_DIR  = Pathname('output').freeze
 SRC_DIR     = Pathname('src').freeze
-SRC_FILE    = Pathname('main.latex').freeze
-PDF_FILE    = SRC_FILE.sub_ext('.pdf').freeze
+SRCS        = Pathname.glob("#{SRC_DIR}/resume_*.latex").freeze
+MAIN        = (SRC_DIR + 'main.latex').freeze
+PDF_FILES   = SRCS.map { |e| BUILD_DIR + e.basename.sub_ext('.pdf') }.freeze
 TEX         = 'xelatex'.freeze
 VIEWER      = 'xpdf -fullscreen'.freeze
 
@@ -17,12 +18,14 @@ rule '.pdf' => LATEX_2_PDF do |t|
   2.times { sh "#{TEX} -output-directory #{BUILD_DIR} #{t.source}" }
 end
 
+PDF_FILES.each { |e| file e => MAIN }
+
 
 task default: :build
 task all: %i[build install]
 
 desc 'Build PDF output from LaTeX sources'
-task build: BUILD_DIR + PDF_FILE
+task build: PDF_FILES
 
 desc 'Install built files in `output\' directory'
 task install: :build do
@@ -35,6 +38,6 @@ task :clean do
 end
 
 desc 'View PDF output with xpdf'
-task view: :install do
-  sh "#{VIEWER} #{OUTPUT_DIR}/#{PDF_FILE} > /dev/null 2>&1"
+task view: PDF_FILES.first do
+  sh "#{VIEWER} #{PDF_FILES.first} > /dev/null 2>&1"
 end

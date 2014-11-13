@@ -1,0 +1,2 @@
+\def\isshort{1}
+\input{src/main.latex}

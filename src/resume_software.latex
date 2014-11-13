@@ -1,0 +1,2 @@
+\def\jobtitle{Full-stack software engineer}
+\input{src/main.latex}
