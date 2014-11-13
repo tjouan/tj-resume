@@ -38,6 +38,11 @@ task :clean do
 end
 
 desc 'View PDF output with xpdf'
-task view: PDF_FILES.first do |t|
-  sh "#{VIEWER} #{t.source} > /dev/null 2>&1"
+task :view, [:substring] do |t, args|
+  file = PDF_FILES.find { |e| e.to_s.include? args.substring } if args.substring
+  file ||= PDF_FILES.first
+  Rake::Task[:build].prerequisites.clear
+  Rake::Task[:build].prerequisites.replace [file]
+  Rake::Task[:build].invoke
+  sh "#{VIEWER} #{file} > /dev/null 2>&1"
 end
