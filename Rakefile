@@ -38,6 +38,6 @@ task :clean do
 end
 
 desc 'View PDF output with xpdf'
-task view: PDF_FILES.first do
-  sh "#{VIEWER} #{PDF_FILES.first} > /dev/null 2>&1"
+task view: PDF_FILES.first do |t|
+  sh "#{VIEWER} #{t.source} > /dev/null 2>&1"
 end
