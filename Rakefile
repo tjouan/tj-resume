@@ -25,7 +25,7 @@ task default: :build
 task all: %i[build install]
 
 desc 'Build PDF documents from LaTeX sources'
-task build: PDF_FILES
+multitask build: PDF_FILES
 
 desc "Install built PDF in `#{DIST_DIR}' directory"
 task install: :build do
