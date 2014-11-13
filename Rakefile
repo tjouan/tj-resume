@@ -1,3 +1,4 @@
+require 'rake/clean'
 require 'pathname'
 
 BUILD_DIR   = Pathname('build').freeze
@@ -12,6 +13,8 @@ VIEWER      = 'xpdf -fullscreen'.freeze
 LATEX_2_PDF = proc do |t|
   t.sub(BUILD_DIR.to_s, SRC_DIR.to_s).sub('.pdf', '.latex')
 end
+
+CLEAN.include "#{BUILD_DIR}/*"
 
 
 rule '.pdf' => LATEX_2_PDF do |t|
@@ -30,11 +33,6 @@ multitask build: PDF_FILES
 desc "Install built PDF in `#{DIST_DIR}' directory"
 task install: :build do
   cp Pathname.glob("#{BUILD_DIR}/*.pdf"), DIST_DIR
-end
-
-desc 'Clean temporary build files'
-task :clean do
-  BUILD_DIR.each_child &:unlink
 end
 
 desc 'View PDF output with xpdf'
