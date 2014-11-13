@@ -22,6 +22,8 @@ end
 
 PDF_FILES.each { |e| file e => MAIN }
 
+directory DIST_DIR
+
 
 task default: :build
 task all: %i[build install]
