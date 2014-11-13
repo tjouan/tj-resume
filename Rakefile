@@ -1,17 +1,16 @@
 require 'rake/clean'
-require 'pathname'
 
-BUILD_DIR   = Pathname('build').freeze
-DIST_DIR    = Pathname('dist').freeze
-SRC_DIR     = Pathname('src').freeze
-SRCS        = Pathname.glob("#{SRC_DIR}/resume_*.latex").freeze
-MAIN        = (SRC_DIR + 'main.latex').freeze
-PDF_FILES   = SRCS.map { |e| BUILD_DIR + e.basename.sub_ext('.pdf') }.freeze
+BUILD_DIR   = 'build'.freeze
+DIST_DIR    = 'dist'.freeze
+SRC_DIR     = 'src'.freeze
+SRCS        = FileList["#{SRC_DIR}/resume_*.latex"]
+MAIN        = "#{SRC_DIR}/main.latex".freeze
+PDF_FILES   = SRCS.pathmap "#{BUILD_DIR}/%n.pdf"
 TEX         = 'xelatex'.freeze
 VIEWER      = 'xpdf -fullscreen'.freeze
 
 LATEX_2_PDF = proc do |t|
-  t.sub(BUILD_DIR.to_s, SRC_DIR.to_s).sub('.pdf', '.latex')
+  t.pathmap("%{^#{BUILD_DIR},#{SRC_DIR}}X.latex")
 end
 
 CLEAN.include "#{BUILD_DIR}/*"
@@ -31,8 +30,8 @@ desc 'Build PDF documents from LaTeX sources'
 multitask build: PDF_FILES
 
 desc "Install built PDF in `#{DIST_DIR}' directory"
-task install: :build do
-  cp Pathname.glob("#{BUILD_DIR}/*.pdf"), DIST_DIR
+task install: [:build, DIST_DIR] do
+  cp PDF_FILES, DIST_DIR
 end
 
 desc 'View PDF output with xpdf'
