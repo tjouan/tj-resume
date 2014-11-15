@@ -1,4 +1,5 @@
 require 'rake/clean'
+require 'tmpdir'
 
 BUILD_DIR   = 'build'.freeze
 DIST_DIR    = 'dist'.freeze
@@ -8,6 +9,9 @@ MAIN        = "#{SRC_DIR}/main.latex".freeze
 PDF_FILES   = SRCS.pathmap "#{BUILD_DIR}/%n.pdf"
 TEX         = 'xelatex'.freeze
 VIEWER      = 'xpdf -fullscreen'.freeze
+
+GITHUB_USERNAME = 'tjouan'.freeze
+GITHUB_REPONAME = 'tj-resume'.freeze
 
 LATEX_2_PDF = proc do |t|
   t.pathmap("%{^#{BUILD_DIR},#{SRC_DIR}}X.latex")
@@ -44,4 +48,26 @@ task :view, [:substring] do |t, args|
   Rake::Task[:build].prerequisites.replace [file]
   Rake::Task[:build].invoke
   sh "#{VIEWER} #{file} > /dev/null 2>&1"
+end
+
+namespace :publish do
+  desc 'Publish to GitHub pages'
+  task github: :build do
+    Dir.mktmpdir('resume_gh-pages') do |dir|
+      sh "git clone --branch gh-pages . #{dir}"
+      cp PDF_FILES, "#{dir}/#{DIST_DIR}"
+      File.open("#{dir}/index.md", 'w') do |f|
+        PDF_FILES.each do |e|
+          path = e.pathmap "#{DIST_DIR}/%f"
+          f.puts '[%s](https://%s.github.io/%s/%s)' % [
+            path, GITHUB_USERNAME, GITHUB_REPONAME, path
+          ]
+        end
+      end
+      sh "git -C #{dir} add ."
+      sh "git -C #{dir} commit -m 'Publish generated PDF to GitHub pages'"
+      sh "git -C #{dir} remote add github $(git config --get remote.github.url)"
+      sh "git -C #{dir} push -f github gh-pages"
+    end
+  end
 end
