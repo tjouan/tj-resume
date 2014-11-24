@@ -56,18 +56,23 @@ namespace :publish do
     Dir.mktmpdir('resume_gh-pages') do |dir|
       sh "git clone --branch gh-pages . #{dir}"
       cp PDF_FILES, "#{dir}/#{DIST_DIR}"
-      File.open("#{dir}/index.md", 'w') do |f|
-        PDF_FILES.each do |e|
-          path = e.pathmap "#{DIST_DIR}/%f"
-          f.puts '[%s](https://%s.github.io/%s/%s)' % [
-            path, GITHUB_USERNAME, GITHUB_REPONAME, path
-          ]
-        end
-      end
+      write_github_pages_index "#{dir}/index.md", PDF_FILES
       sh "git -C #{dir} add ."
       sh "git -C #{dir} commit -m 'Publish generated PDF to GitHub pages'"
       sh "git -C #{dir} remote add github $(git config --get remote.github.url)"
       sh "git -C #{dir} push -f github gh-pages"
+    end
+  end
+end
+
+
+def write_github_pages_index(path, files)
+  File.open(path, 'w') do |f|
+    files.each do |e|
+      path = e.pathmap "#{DIST_DIR}/%f"
+      f.puts '[%s](https://%s.github.io/%s/%s)' % [
+        path, GITHUB_USERNAME, GITHUB_REPONAME, path
+      ]
     end
   end
 end
