@@ -54,13 +54,15 @@ namespace :publish do
   desc 'Publish to GitHub pages'
   task github: :build do
     Dir.mktmpdir('resume_gh-pages') do |dir|
+      github_pages_index = "#{dir}/index.md"
       sh "git clone --branch gh-pages . #{dir}"
       cp PDF_FILES, "#{dir}/#{DIST_DIR}"
-      write_github_pages_index "#{dir}/index.md", PDF_FILES
+      write_github_pages_index github_pages_index, PDF_FILES
       sh "git -C #{dir} add ."
       sh "git -C #{dir} commit -m 'Publish generated PDF to GitHub pages'"
       sh "git -C #{dir} remote add github $(git config --get remote.github.url)"
       sh "git -C #{dir} push -f github gh-pages"
+      puts '-' * 80, File.read(github_pages_index)
     end
   end
 end
