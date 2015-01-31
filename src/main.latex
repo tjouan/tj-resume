@@ -17,6 +17,8 @@
 
 \usepackage{microtype}
 
+\usepackage[super]{nth}
+
 \moderncvtheme{classic}
 
 \providecommand*{\jabbersymbol}{{\includegraphics[height=8pt]{images/jabber.png}}}
