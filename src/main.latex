@@ -74,7 +74,7 @@
       jQuery}
   \cvcomputer
     {Frameworks}
-    {Ruby on Rails ≥ 3.x\contributor, Sinatra, Backbone.js, Spine.js, D3.js,
+    {Ruby on Rails ≥ 3.x\contributor, Sinatra, Backbone.js, Spine.js,
       Symfony 1.x}
     {Databases}{PostgreSQL, MySQL, Redis}
   \cvcomputer
@@ -89,7 +89,7 @@
 
   \subsection{SysAdmin}
   \cvcomputer
-    {OS}{GNU/Linux, FreeBSD, NetBSD, OpenBSD, Solaris}
+    {OS}{FreeBSD, GNU/Linux, NetBSD, OpenBSD, Solaris}
     {www}{Nginx, lighttpd, Varnish, HAProxy, Apache HTTP Server}
   \cvcomputer
     {DNS}{BIND, MaraDNS, Unbound}
@@ -102,7 +102,7 @@
     {Security}{pf, ipf, ipfw, ip6?tables, Openswan, OpenVPN, isakmpd, racoon}
   \cvcomputer
     {Storage}{ZFS, NFS, Samba}
-    {Misc}{INN, various irc daemons}
+    {Misc}{Beanstalk, INN, various irc daemons}
 
 
   \section{Personal projects}
@@ -129,7 +129,7 @@
 
   \cvcomputer
     {Languages}{Elixir, Erlang, Haskell, R, \LaTeX}
-    {Frameworks}{Ember.js}
+    {Frameworks}{Ember.js, D3.js}
   \cvcomputer
     {DevOps}{Chef, Puppet, Ansible, Capistrano…}
     {}{}
