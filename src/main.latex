@@ -233,6 +233,17 @@
   {Barman}{Nördik Impakt (music festival)}{Caen}{}{}
 
 
+\section{Education}
+
+\tlcventry
+  {2001}{2004}
+  {\nth{1} cycle (3 years)}{Epitech}{Paris}{http://www.epitech.eu/}{}
+
+\tllabelcventry
+  {2001}{2001.5}{2001}
+  {Baccalauréat scientifique}{Lycée du Canada}{Évreux}{}{}
+
+
 \section{Languages}
 
 \cvitemwithcomment{French}{Native}{}
