@@ -89,7 +89,7 @@
 
   \subsection{SysAdmin}
   \cvcomputer
-    {OS}{FreeBSD, GNU/Linux, NetBSD, OpenBSD, Solaris}
+    {OS}{FreeBSD, GNU/Linux, NanoBSD, NetBSD, OpenBSD, Solaris}
     {www}{Nginx, lighttpd, Varnish, HAProxy, Apache HTTP Server}
   \cvcomputer
     {DNS}{BIND, MaraDNS, Unbound}
