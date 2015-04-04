@@ -119,8 +119,8 @@
     on Rails). It supports a few common asset kinds, more specific ones are
     supported by plugins.
   }
-  \cvitem{holo}{
-    https://github.com/tjouan/holo \newline
+  \cvitem{uh}{
+    https://github.com/tjouan/uh \newline
     My own X11 window manager, written in C and Ruby (work in progress).
   }
 
