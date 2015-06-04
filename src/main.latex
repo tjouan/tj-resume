@@ -98,7 +98,7 @@
     {XMPP}{Jabberd, ejabberd}
   \cvcomputer
     {Supervision}{Sensu, Nagios, MRTG, RRDtool…}
-    {Security}{pf, ipf, ipfw, ip6?tables, Openswan, OpenVPN, isakmpd, racoon}
+    {Security}{pf, ipf, ipfw, iptables, IPsec, VPN, OpenSSL}
   \cvcomputer
     {Storage}{ZFS, NFS, Samba}
     {Misc}{Beanstalk, INN, various irc daemons}
