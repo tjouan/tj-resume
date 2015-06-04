@@ -60,7 +60,7 @@ namespace :publish do
       write_github_pages_index github_pages_index, PDF_FILES
       sh "git -C #{dir} add ."
       sh "git -C #{dir} commit -m 'Publish generated PDF to GitHub pages'"
-      sh "git -C #{dir} remote add github $(git config --get remote.github.url)"
+      sh "git -C #{dir} remote add github $(git config --get remote.gh.url)"
       sh "git -C #{dir} push -f github gh-pages"
       puts '-' * 80, File.read(github_pages_index)
     end
