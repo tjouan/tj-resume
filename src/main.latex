@@ -75,8 +75,7 @@
     {Frameworks}{Ruby on Rails, Sinatra, Rack, Backbone.js}
     {Databases}{PostgreSQL, MySQL, Redis}
   \cvcomputer
-    {BDD, TDD}
-    {Cucumber, Aruba, Capybara, Selenium, RSpec, Test::Unit, MiniTest}
+    {Test}{Cucumber, RSpec, MiniTest, Test::Unit, Aruba, Capybara, Selenium}
     {GUI}{Xlib, GTK, QT, SDL, OpenGL}
 
   \subsection{Tools}
