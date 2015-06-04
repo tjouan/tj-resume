@@ -73,11 +73,11 @@
     {HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js}
   \cvcomputer
     {Frameworks}
-    {Ruby on Rails, Sinatra, Rack, Backbone.js, Symfony 1.x}
+    {Ruby on Rails, Sinatra, Rack, Backbone.js}
     {Databases}{PostgreSQL, MySQL, Redis}
   \cvcomputer
     {BDD, TDD}
-    {Cucumber, Aruba, Capybara, Selenium, RSpec, Test::Unit, MiniTest, PHPUnit}
+    {Cucumber, Aruba, Capybara, Selenium, RSpec, Test::Unit, MiniTest}
     {GUI}{Xlib, GTK, QT, SDL, OpenGL}
 
   \subsection{Tools}
