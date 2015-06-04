@@ -127,7 +127,7 @@
   \section{Learning}
 
   \cvcomputer
-    {Languages}{Elixir, Erlang, Haskell, R, \LaTeX}
+    {Languages}{Elixir, Erlang, Haskell, Rust, R, \LaTeX}
     {Frameworks}{Ember.js, D3.js}
   \cvcomputer
     {DevOps}{Chef, Puppet, Ansible, Capistrano…}
