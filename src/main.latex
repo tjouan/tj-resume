@@ -74,8 +74,7 @@
       jQuery}
   \cvcomputer
     {Frameworks}
-    {Ruby on Rails ≥ 3.x, Sinatra, Rack, Backbone.js, Spine.js,
-      Symfony 1.x}
+    {Ruby on Rails, Sinatra, Rack, Backbone.js, Symfony 1.x}
     {Databases}{PostgreSQL, MySQL, Redis}
   \cvcomputer
     {BDD, TDD}
