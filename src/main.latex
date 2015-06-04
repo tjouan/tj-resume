@@ -117,9 +117,11 @@
     on Rails). It supports a few common asset kinds, more specific ones are
     supported by plugins.
   }
-  \cvitem{uh}{
-    https://github.com/tjouan/uh \newline
-    My own X11 window manager, written in C and Ruby (work in progress).
+  \cvitem{uhwm}{
+    https://github.com/tjouan/uh-wm \newline
+    uhwm is a minimalistic tiling and stacking window manager for X. It
+    shares some similarities with dwm and wmii, but is written in ruby so
+    you can configure and extend features directly with ruby code.
   }
 
 
