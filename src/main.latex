@@ -97,7 +97,7 @@
     {Directory}{OpenLDAP, NIS}
     {XMPP}{Jabberd, ejabberd}
   \cvcomputer
-    {Supervision}{Nagios, MRTG, RRDtool, Munin…}
+    {Supervision}{Sensu, Nagios, MRTG, RRDtool…}
     {Security}{pf, ipf, ipfw, ip6?tables, Openswan, OpenVPN, isakmpd, racoon}
   \cvcomputer
     {Storage}{ZFS, NFS, Samba}
