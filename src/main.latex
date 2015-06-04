@@ -70,8 +70,7 @@
   \cvcomputer
     {Languages}{Ruby, C, shell, Perl, ECMAScript, CoffeeScript, PHP}
     {www}
-    {HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js,
-      jQuery}
+    {HTML/XHTML, CSS, SVG, Haml, Sass, Haml Coffee, Handlebars, Emblem.js}
   \cvcomputer
     {Frameworks}
     {Ruby on Rails, Sinatra, Rack, Backbone.js, Symfony 1.x}
